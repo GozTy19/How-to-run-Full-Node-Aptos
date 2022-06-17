@@ -70,7 +70,7 @@ sudo systemctl restart subspaced-farmer
 echo "==================================================="
 echo -e '\n\e[42mKiểm tra trạng thái node\e[0m\n' && sleep 1
 if [[ `service subspaced status | grep active` =~ "running" ]]; then
-  echo -e "Subspace node \e[32mđang làm việc\e[39m!"
+  echo -e "Subspace node \e[32mđang hoạt động\e[39m!"
   echo -e "Bạn có thể kiểm tra trạng thái node bằng lệnh \e[7mservice subspaced status\e[0m"
   echo -e "Nhấn \e[7mQ\e[0m để thoát menu trạng thái"
 else
@@ -80,7 +80,7 @@ sleep 2
 echo "==================================================="
 echo -e '\n\e[42mKiểm tra trạng thái farmer\e[0m\n' && sleep 1
 if [[ `service subspaced-farmer status | grep active` =~ "running" ]]; then
-  echo -e "Subspace farmer của bạn\e[32mđang hoạt động\e[39m!"
+  echo -e "Subspace farmer của bạn \e[32mđang hoạt động\e[39m!"
   echo -e "Bạn có thể kiển tra trạng thái farmer bằng lệnh \e[7mservice subspaced-farmer status\e[0m"
   echo -e "Nhấn \e[7mQ\e[0m để thoát menu trạng thái"
 else
